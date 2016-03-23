@@ -7,7 +7,8 @@ title: Chensm's Blog
 subtitle:
 description:
 author: Chensm
-language:
+email: simonchan@chensm.me
+language: zh-CN
 timezone:
 
 # URL
@@ -69,3 +70,6 @@ theme: landscape
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type:
+  # type: github
+  # repository:
+  # branch: master
