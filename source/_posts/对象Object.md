@@ -207,4 +207,4 @@ console.log(Object.getPrototypeOf(person1) == Person.prototype); // => true
 console.log(Object.getPrototypeOf(person1).name); // => Nicholas // Person.prototype中的name
 console.log(Object.getPrototypeOf(person2).name); // => Nicholas
 ````
-![Object Prototype Relation Sample](http://127.0.0.1:3000/images/javaScriptObject/object_prototype_relation.png)
+![Object Prototype Relation Sample](http://www.chensm.me/images/javaScriptObject/object_prototype_relation.png)
