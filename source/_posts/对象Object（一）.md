@@ -1,9 +1,9 @@
-title: 对象Object
-date: 2016-03-25 01:20:11
+title: 对象Object（一）
+date: 2016-04-26 19:50:06
 tags: javaScript Object
 categories: javaScript笔记
 ---
-# Object
+# 对象Object（一）
 ### 两种属性（property）：数据属性和访问器属性
 #### 数据属性的四个特性（attribute）
 - [[Configurable]]：能否重新设置属性（不是属性的值），包括delete、修改特性或者修改为访问器属性。直接定义在Object中的属性的这个特性默认为true
@@ -170,41 +170,3 @@ console.log(person1 instanceof Person); // => true
 console.log(person2 instanceof Object); // => true
 console.log(person2 instanceof Person); // => true
 ````
-
-#### 原型模式
-###### 原型对象
-- 每新建一个函数（包括构造函数），都会创建一个指向函数**原型对象（原型）**的prototype属性。
-- 默认情况下，函数对象会获得一个constructor属性，这个属性包含一个指向prototype属性所在函数的指针。
-- 对象实现可以访问原型的值，但是无法修改原型的值。
-
-````javascript
-// 原型模式
-function Person() {}
-
-Person.prototype.name = 'Nicholas';
-Person.prototype.age = 29;
-Person.prototype.job = 'Software Engineer';
-Person.prototype.sayName = function() { console.log(this.name); }
-
-var person1 = new Person();
-person1.sayName(); // => Nicholas
-var person2 = new Person();
-person2.sayName(); // => Nicholas
-person1.name = 'Grey';
-person1.sayName(); // => Grey       // 来自实例
-person2.sayName(); // => Nicholas   // 来自原型prototype，person1无法修改prototype的值
-delete person1.name;
-person1.sayName(); // => Nicholas   // 来自原型prototype
-
-// 实例共享
-console.log(person1.sayName == person2.sayName);  // => true
-
-// 检测[[Prototype]]
-console.log(Person.prototype.isPrototypeOf(person1)); // => true
-console.log(Person.prototype.isPrototypeOf(person2)); // => true
-
-console.log(Object.getPrototypeOf(person1) == Person.prototype); // => true
-console.log(Object.getPrototypeOf(person1).name); // => Nicholas // Person.prototype中的name
-console.log(Object.getPrototypeOf(person2).name); // => Nicholas
-````
-![Object Prototype Relation Sample](http://www.chensm.me/images/javaScriptObject/object_prototype_relation.png)
