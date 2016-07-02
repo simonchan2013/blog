@@ -1,2 +1,2 @@
-backup for my blog
+backup for my note
 ======================================
