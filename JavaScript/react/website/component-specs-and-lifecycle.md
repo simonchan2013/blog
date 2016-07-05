@@ -1,10 +1,10 @@
 ### 对应链接
 - 官网
-  [Component Specs and Lifecycle](https://facebook.github.io/react/docs/component-specs.html)
-  [Reusable Components](https://facebook.github.io/react/docs/reusable-components.html)
+  - [Component Specs and Lifecycle](https://facebook.github.io/react/docs/component-specs.html)
+  - [Reusable Components](https://facebook.github.io/react/docs/reusable-components.html)
 
 - 其他
-
+  - [Why React PropTypes are important](http://wecodetheweb.com/2015/06/02/why-react-proptypes-are-important/)
 
 
 ### Component Specifications
