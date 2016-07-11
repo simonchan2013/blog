@@ -5,3 +5,5 @@
 [Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.14j35o9cs)
 
 [Smart and Dumb Components in React](http://jaketrent.com/post/smart-dumb-components-react/)
+
+[探索React源码的全局模块系统](https://leozdgao.me/react-global-module-system/)
