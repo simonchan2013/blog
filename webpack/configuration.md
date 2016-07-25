@@ -68,6 +68,7 @@
 
     - `libraryTarget`：最后导出库的格式
       - `var`：作为变量导出，`var Library = xxx`（默认）
+      - `commonjs2`：作为commonjs模块导出，`module.exports = xxx`
 
 - `module`：常规模块的相关配置
   - `loaders`：一系列自动应用的`loader`，数组形式，每个元素都是如下格式的对象：

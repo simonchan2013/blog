@@ -6,3 +6,13 @@ git checkout -b <newBranchName>
 
 git push -u origin <newBranchName>
 ```
+
+
+
+### [(stackoverflow)How to get the git repository that I cloned before?](http://stackoverflow.com/questions/8051259/how-to-get-the-git-repository-that-i-cloned-before)
+```shell
+# get git repository in command line
+git remote show origin
+# just get url
+git remote show origin | grep "Fetch URL"
+```
